@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bangla Search Engine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 36px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      margin-bottom: 30px;
+    }
+
+    .search-container {
+      background: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      width: 400px;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .search-container:focus-within {
+      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+      transform: scale(1.02);
+    }
+
+    .search-container input {
+      border: none;
+      outline: none;
+      padding: 12px 20px;
+      font-size: 18px;
+      border-radius: 50px;
+      width: 100%;
+      background: #f1f1f1;
+      transition: background 0.3s;
+    }
+
+    .search-container input:focus {
+      background: #e0e0e0;
+    }
+
+    .search-container button {
+      border: none;
+      background: #4285f4;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-container button:hover {
+      background: #357ae8;
+      transform: rotate(10deg);
+    }
+
+    .search-container button i {
+      font-size: 20px;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 480px) {
+      .search-container {
+        padding: 10px 15px;
+      }
+
+      .search-container input {
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+
+      .search-container button {
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Bangla Search Engine</h2>
+    <form class="search-container" action="https://www.google.com/search" method="GET" target="_blank">
+      <input type="text" name="q" placeholder="Ja icca tai lakho...">
+      <button type="submit"><i class="fas fa-search"></i>Search</button>
+    </form>
+  </div>
+
+</body>
+</html>
